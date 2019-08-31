@@ -19,14 +19,14 @@ async function getJson() {
         alert("Ошибка HTTP: " + response.status);
     } else {
         let json = await response.json();
-        //alert(json.data[0].name);
-        //console.log(json);
-
-        json = JSON.stringify(json);
         handlerDom();
-        let para = document.createElement("p");
-        para.innerText = json;
-        div_dev.appendChild(para);
+        for (let i = 0; i < json.data.length; i++) {
+            if (json.data[i].hasOwnProperty('logo')) {
+                let para = document.createElement("p");
+                para.innerText = json.data[i].logo;
+                div_dev.appendChild(para);
+            }
+        }
     }
 }
 
