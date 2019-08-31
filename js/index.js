@@ -22,9 +22,35 @@ async function getJson() {
         handlerDom();
         for (let i = 0; i < json.data.length; i++) {
             if (json.data[i].hasOwnProperty('logo')) {
-                let para = document.createElement("p");
-                para.innerText = json.data[i].logo;
-                div_dev.appendChild(para);
+                let div_lang = document.createElement('div');
+                div_lang.setAttribute('id', 'div_lang');
+                div_dev.appendChild(div_lang);
+
+                let img = new Image(100, 100);
+                img.src = json.data[i].logo;
+                div_lang.appendChild(img);
+
+                let name = document.createElement("p");
+                name.setAttribute('id', 'name');
+                name.innerText = json.data[i].name;
+                div_lang.appendChild(name);
+
+                let year = document.createElement("p");
+                year.setAttribute('id', 'year');
+                year.innerText = 'Основан в ' + json.data[i].year;
+                div_lang.appendChild(year);
+
+                let projectsCount = document.createElement("p");
+                projectsCount.setAttribute('id', 'projectsCount');
+                projectsCount.innerText = json.data[i].projectsCount + ' проектов на GitHub';
+                div_lang.appendChild(projectsCount);
+
+                let docs = document.createElement("a");
+                docs.setAttribute('id', 'docs');
+                docs.innerText = 'Документация';
+                docs.href = json.data[i].docs;
+                docs.setAttribute('target', '_blank');
+                div_lang.appendChild(docs);
             }
         }
     }

@@ -1,5 +1,35 @@
-#div_dev {
-  width: auto;
-  height: auto;
-  background-color: rgb(108, 153, 114);
+#div_dev {}
+
+#div_lang {
+  width: 400px;
+  height: 110px;
+  border: 1px solid gray;
+  margin-top: 10px;
+}
+
+p {
+  line-height: 0px;
+  margin-top: 5px;
+}
+
+#div_lang img {
+  float: left;
+  padding: 5px;
+}
+
+#name {
+  width: 55%;
+  font-weight: bold;
+  float: left;
+  padding-top: 10px;
+}
+
+#year {
+  width: 55%;
+  float: left;
+}
+
+#projectsCount {
+  width: 55%;
+  float: left;
 }
