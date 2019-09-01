@@ -1,22 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 body {
   padding: 10px;
+  font-family: montserrat, arial, verdana;
+}
+
+.tlt {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.tlt:before {
+  border-top: 2px solid #dfdfdf;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 99%;
+  z-index: -1;
+}
+
+.tlt span {
+  background: #fff;
+  padding: 0 15px;
 }
 
 .custom-select {
-  width: 20%;
-}
-.my-1, .mr-2 {
-  width: 30%;
-  vertical-align: top;
-  float: left;
+  width: 370px;
 }
 
-#btn_dev {
-  margin-top: 4px;
+.lbl {
+  width: 350px;
+  vertical-align: top;
+  float: left;
+  margin-top: 10px;
+}
+
+#div_container {
+  margin-top: 20px;
 }
 
 #div_lang {
-  width: 400px;
+  width: 450px;
   height: 102px;
   border: 1px solid gray;
   margin-top: 10px;
@@ -24,11 +52,22 @@ body {
 
 #div_container_res {
   display: inline-block;
+  background-color: #f3f3f3;
+  padding: 0px 10px 10px 10px;
+  border-left: 20px solid #f5eb9b;
 }
 
 p {
   line-height: 0px;
   margin-top: 5px;
+}
+
+#numer_rating {
+  font-size: 50px;
+  float: right;
+  color: #f5ea8f;
+  font-weight: 800;
+  padding: 0px 10px 0px 0px;
 }
 
 #div_lang img {
@@ -40,7 +79,7 @@ p {
   width: 55%;
   font-weight: bold;
   float: left;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 #year {
