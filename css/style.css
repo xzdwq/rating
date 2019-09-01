@@ -5,6 +5,11 @@ body {
   font-family: montserrat, arial, verdana;
 }
 
+p {
+  line-height: 0px;
+  margin-top: 5px;
+}
+
 .tlt {
   text-align: center;
   padding-bottom: 20px;
@@ -57,12 +62,7 @@ body {
   border-left: 20px solid #f5eb9b;
 }
 
-p {
-  line-height: 0px;
-  margin-top: 5px;
-}
-
-#numer_rating {
+#number_rating {
   font-size: 50px;
   float: right;
   color: #f5ea8f;
@@ -82,12 +82,7 @@ p {
   padding-top: 7px;
 }
 
-#year {
-  width: 55%;
-  float: left;
-}
-
-#projectsCount {
+#year, #projectsCount {
   width: 55%;
   float: left;
 }

@@ -68,14 +68,13 @@ async function getJson() {
                     div_lang.appendChild(docs);
                 }
 
-                let numer_rating = document.createElement("p");
-                numer_rating.setAttribute('id', 'numer_rating');
-                numer_rating.innerText = k + 1;
-                div_lang.appendChild(numer_rating);
+                let number_rating = document.createElement("p");
+                number_rating.setAttribute('id', 'number_rating');
+                number_rating.innerText = k + 1;
+                div_lang.appendChild(number_rating);
                 k++;
             }
         }
-
 
         let label_res = document.createElement('label');
         label_res.setAttribute('class', 'lbl');
